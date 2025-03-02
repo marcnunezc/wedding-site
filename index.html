@@ -5,18 +5,16 @@
     <meta name="theme-color" content="#BC8887" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Undangan Pernikahan Sherly & Daeng</title>
+    <title>Boda Lara & Marc</title>
 
-    <meta property="og:title" content="Undangan Pernikahan Sherly & Daeng - Sabtu, 21 Maret 2020">
-    <meta property="og:description" content="Undangan Pernikahan Sherly & Daeng - Sabtu, 21 Maret 2020 di RM Pondok Kenanga, Jakasampurna Bekasi">
+    <meta property="og:title" content="Boda Can Truy - Lara & Marc - Sábado, 20 de Septiembre de 2025">
+    <meta property="og:description" content="Boda Can Truy - Lara & Marc - Sábado, 20 de Septiembre de 2025">
     <meta property="og:locale" content="id_ID" />
-    <meta property="og:image" content="https://sherly.dae.ng/image/sherly-daeng-wedding-thumbnail.png">
-    <meta property="og:url" content="http://sherly.dae.ng/index.html">
     <meta name="twitter:card" content="summary_large_image">
     <!-- Bulma Version 0.8.x-->
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/bulma-tooltip@0.1.5/dist/bulma-tooltip.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/menikah.css" />
+    <link rel="stylesheet" type="text/css" href="css/wedding.css" />
     <link rel="stylesheet" type="text/css" href="css/jquery.countdown.css" />
     <script
       src="https://kit.fontawesome.com/2828f7885a.js"
@@ -24,7 +22,7 @@
       crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="js/jquery.coundown.js"></script>
-    <link rel="icon" type="image/png" href="image/favicon.png" />
+    <link rel="icon" type="image/png" href="image/orange_icon.png" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23064379-20"></script>
     <!-- Begin Script for Countdown -->
@@ -45,7 +43,7 @@
     <!-- Begin Preloader -->
     <div class="preloader-wrapper">
       <div class="preloader">
-        <img src="image/favicon.png" alt="Flower" />
+        <img src="image/naranjo_rama.png" alt="Flower" />
       </div>
     </div>
     <!-- End Preloader-->
@@ -67,24 +65,18 @@
           <div id="mobile-nav" class="navbar-menu">
             <div class="navbar-end">
               <div class="navbar-item">
-                <a class="navbar-item" href="#Waktu">
-                  Waktu
+                <a class="navbar-item" href="#Fecha">
+                  Fecha
                 </a>
               </div>
               <div class="navbar-item">
-                <a class="navbar-item" href="#lokasi">
-                  Lokasi
-                </a>
-              </div>
-              
-              <div class="navbar-item">
-                <a class="navbar-item" href="#tentang-sherly-daeng">
-                  Tentang Sherly dan Daeng
+                <a class="navbar-item" href="#lugar">
+                  Lugar
                 </a>
               </div>
               <div class="navbar-item">
                 <a class="navbar-item" href="#rsvp">
-                  RSVP
+                  Formulario
                 </a>
               </div>
             </div>
@@ -94,28 +86,28 @@
         <!-- Begin Hero Content-->
         <div class="hero-body">
           <div class="container has-text-centered">
-            <h1 class="subtitle">Undangan Pernikahan</h1>
-            <h2 class="title">Sherly & Daeng</h2>
-            <h4 class="subtitle tempatwaktu">
-              
-                Sabtu, 21 Maret 2020 
+            <h1 class="subtitle">Boda Can Truy</h1>
+            <h2 class="title">Lara & Marc</h2>
+            <h4 class="subtitle tempatfecha">
+
+                Sábado, 20 de Septiembre de 2025
                 </br>
-                RM Pondok Kenanga, Jakasampurna
+                Can Truy
                 </br>
-                Kota Bekasi
-              
+                Ibiza
+
             </h4>
           </div>
-          <!-- Start Countdown -->       
+          <!-- Start Countdown -->
           <div>
-            <ul id="hitungmundur" >
-              <li><span class="days">00</span><p class="days_text">Hari</p></li>
+            <ul id="countdown" >
+              <li><span class="days">00</span><p class="days_text">Días</p></li>
               <li class="separator">:</li>
-              <li><span class="hours">00</span><p class="hours_text">Jam</p></li>
+              <li><span class="hours">00</span><p class="hours_text">Horas</p></li>
               <li class="separator">:</li>
-              <li><span class="minutes">00</span><p class="minutes_text">Menit</p></li>
+              <li><span class="minutes">00</span><p class="minutes_text">Minutos</p></li>
               <li class="separator">:</li>
-              <li><span class="seconds">00</span><p class="seconds_text">Detik</p></li>
+              <li><span class="seconds">00</span><p class="seconds_text">Segundos</p></li>
             </ul>
             <div class="spasi">
             </div>
@@ -124,19 +116,17 @@
               var day = now.getDate();
               var month = now.getMonth() + 1;
               var year = now.getFullYear() + 1;
-          
-              var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
-              var harih = '03/21/2020 17:00:00';
 
-              $('#hitungmundur').countdown({
-                date: harih, // TODO Date format: 07/27/2017 17:00:00
-                offset: +7, // TODO Your Timezone Offset
-                day: 'Hari',
-                days: 'Hari'
-              }, function () {
-                alert('Done!');
+              var nextyear = day + '/' + month + '/' + year;
+              var target = '09/20/2025 16:00:00';
+
+              $('#countdown').countdown({
+                date: target, // TODO Date format: 07/27/2017 17:00:00
+                offset: +2, // Spain time Offset
+                day: 'Día',
+                days: 'Días'
               });
-            </script>  
+            </script>
           </div>
           <!-- End Countdown -->
         </div>
@@ -148,20 +138,16 @@
               <div class="column is-12 hero-menu-desktop has-text-centered">
                 <ul>
                   <li class="is-active">
-                    <a href="#home">Home</a>
+                    <a href="#home">Inicio</a>
                   </li>
                   <li>
-                    <a href="#Waktu">Waktu</a>
+                    <a href="#Fecha">Fecha</a>
                   </li>
                   <li>
-                    <a href="#lokasi">Lokasi</a>
+                    <a href="#lugar">Lugar</a>
                   </li>
                   <li>
-                    <a href="#tentang-sherly-daeng">Tentang Sherly & Daeng</a>
-                  </li>
-
-                  <li>
-                    <a href="#rsvp">RSVP</a>
+                    <a href="#rsvp">Formulario</a>
                   </li>
                 </ul>
               </div>
@@ -178,17 +164,17 @@
     <div class="main-content">
     <!-- Begin regular-section-->
      <section class="section-light no-padding-top regular-section has-text-centered has-vertically-aligned-content" id="regular-section">
-        
-        <div data-aos="fade-up" data-aos-easing="linear">
-          <img src="image/bismillah.png" class="bismillah has-text-centered" alt="Bismillahirrahmaanirrahiim">
+
+        <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
+          <h1 class="title has-text-centered section-title">Nuestra boda</h1>
         </div>
 
         <p class="bodytext" data-aos="fade-up" data-aos-easing="linear">
-          Assalamu'alaikum Warahmatullahi Wabarakatuh.
+          Texto 1
           <br />
-          Dengan memohon rahmat dan ridha Allah swt, 
+          Texto 2
           <br />
-          kami bermaksud mengundang Bapak/Ibu/Saudara/Saudari pada acara pernikahan kami
+          Texto 3
         </p>
 
         <span class="space40px"></span>
@@ -196,250 +182,133 @@
 
         <div data-aos="fade-up" data-aos-easing="linear">
           <div class="nama-lengkap" >
-            Sherly Jayanti, S.Par.
+            Marc
           </div>
           <div class="ampersand">&</div>
           <div class="nama-lengkap">
-          Daeng Muhammad Feisal, S.Kom.
+            Lara
           </div>
-           
+
         </div>
         <span class="space40px"></span>
         <div data-aos="fade-up" data-aos-easing="linear">
-          <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
+          <img src="image/naranjo_rama.png" class="divider has-text-centered" alt="~~~">
         </div>
         <span class="space40px"></span>
         <span class="space40px"></span>
       </section>
-      <!-- End regular-section-->    
-      
-      <!-- Begin Waktu Section -->
-      <section class="section-dark" id="Waktu">
+      <!-- End regular-section-->
+
+      <!-- Begin Fecha Section -->
+      <section class="section-dark" id="Fecha">
         <div class="container">
 
           <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
-            <h1 class="title has-text-centered section-title">Waktu</h1>
+            <h1 class="title has-text-centered section-title">Fecha</h1>
           </div>
+
           <div class="columns is-multiline" data-aos="fade-up" data-aos-easing="linear">
             <div
               class="column is-4 has-vertically-aligned-content">
-            
+
               <p class="is-larger has-text-centered">
-                  <div class="waktu tanggal-hari has-text-centered">Sabtu</div> 
-                  <div class="waktu tanggal-angka has-text-centered">21</div>
-                  <div class="waktu tanggal-bulan has-text-centered">Maret 2020</div>
+                  <div class="fecha tanggal-hari has-text-centered">Sábado</div>
+                  <div class="fecha tanggal-angka has-text-centered">20</div>
+                  <div class="fecha tanggal-bulan has-text-centered">Septiembre 2025</div>
               </p>
-            
+
             </div>
             <div class="column is-4 has-vertically-aligned-content">
-            
-              <p class="waktu is-larger has-text-centered">
-                Akad Nikah:
+
+              <p class="fecha is-larger has-text-centered">
+                Inicio:
                 <br>
-                <strong>17.00 WIB</strong>
+                <strong>16:00h</strong>
               </p>
-            
+
             </div>
 
             <div class="column is-4 has-vertically-aligned-content">
-              
-              <h1 class="waktu is-larger has-text-centered">
-                Resepsi:
+
+              <h1 class="fecha is-larger has-text-centered">
+                Fin:
                 <br>
-                <strong>19.00  - 21.00 WIB</strong>
+                <strong>04:00h</strong>
               </h1>
-              
-              
+
+
             </div>
 
           </div>
         </div>
         <div class="space40px"></div>
         <div class="main-content has-text-centered" data-aos="fade-up" data-aos-easing="linear">
-          <a href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NGgzdW00NG84dXFwMzcwNXYxbGliNGxzaWggZGFlbmdkb2FuZ0Bt&amp;tmsrc=daengdoang%40gmail.com" target="_blank" class="button has-tooltip btn-cta" data-tooltip="Add to Calendar" target="_blank" data-aos="zoom-in">
+          <a href="https://calendar.google.com/" target="_blank" class="button has-tooltip btn-cta" data-tooltip="Add to Calendar" target="_blank" data-aos="zoom-in">
             <i class="far fa-calendar-plus"></i>
-            &nbsp;&nbsp;Google Calendar
+            Google Calendar
           </a>
         </div>
       </section>
-      <!-- End Waktu Content -->
+      <!-- End Fecha Content -->
 
-      <!-- Begin Lokasi Section -->
-      <section class="section-darker" id="lokasi" >
+      <!-- Begin Lugar Section -->
+      <section class="section-darker" id="lugar" >
         <div class="container">
           <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
-            <h1 class="title has-text-centered section-title">Lokasi</h1>
+            <h1 class="title has-text-centered section-title">Lugar</h1>
             <p class="tempat is-larger has-text-centered">
-              <strong>RM Pondok Kenanga</strong>
+              <strong>Can Truy</strong>
               <br>
-              Jl. Kenanga Raya No.9, RT.001/RW.006A, Jakasampurna, 
+              Carretera San Juan cruce Santa Eulalia Km 10,5,
               <br>
-              Kec. Bekasi Barat, Kota Bekasi, Jawa Barat
+              07840 Santa Eulària des Riu, Illes Balears, España
               <br>
             </p>
           </div>
           <div class="section-map" data-aos="fade-up" data-aos-easing="linear">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.1280267408406!2d106.9691569150978!3d-6.246854895478259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698d5988a190d9%3A0x22b6a052b0a6a5f3!2sRM.%20Pondok%20Kenanga!5e0!3m2!1sen!2sid!4v1579433583123!5m2!1sen!2sid" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.140249610802!2d1.4861969756130684!3d38.989295371704586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12991548c39ef533%3A0xd2fa4c14fd7ab798!2sRestaurante%20Can%20Truy!5e0!3m2!1ses!2sit!4v1740747800893!5m2!1ses!2sit" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
           </div>
           <div class="space40px"></div>
           <div class="has-text-centered" data-aos="fade-up" data-aos-easing="linear">
-            <a href="https://maps.google.com/maps?ll=-6.246855,106.971346&z=16&t=m&hl=en&gl=ID&mapclient=embed&daddr=RM.%20Pondok%20Kenanga%20Jl.%20Kenanga%20Raya%20No.9%20RT.001%2FRW.006A%2C%20Jakasampurna%20Bekasi%20Barat%2C%20Bekasi%20City%2C%20West%20Java%2017145@-6.2468549,106.9713456" class="button btn-cta" target="_blank" data-aos="zoom-in">
+            <a href="https://maps.app.goo.gl/WMmzgkL6gDny4ZmP8" class="button btn-cta" target="_blank" data-aos="zoom-in">
               <i class="far fa-directions"></i>
-              &nbsp;&nbsp;Google Maps
+              Google Maps
             </a>
           </div>
         </div>
       </section>
-      <!-- End Lokasi Content -->
-
-      <!-- Begin Tentang Sherly and Daeng -->
-      <section class="section-light regular-section is-fullheight" id="tentang-sherly-daeng">
-        <div class="container">
-          <div class="columns is-multiline">  
-          <div class="column has-text-centered is-12 prolog">
-            <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">Tentang Sherly dan Daeng</h1>
-            
-
-          
-          <!-- IMAGES -->  
-        <div class=" tile">
-          <div class="tile is-ancestor">
-          <div class="tile is-parent">
-            <article class="tile is-child foto1 notification foto1" data-aos="fade-up" data-aos-easing="linear">
-              <div class="content">
-                <p class="title-foto">November 2018</p>
-                <p class="subtitle-foto">
-                  Pertama kali saling kenal di <a href="https://cashbac.com" target="_blank">Cashbac</a>
-                </p>
-              </div>
-            </article>
-          </div>
-          <div class="tile is-parent">
-            <article class="tile is-child notification foto2" data-aos="fade-up" data-aos-easing="linear">
-              <div class="content">
-                <p class="title-foto">
-                  Desember 2018 - Februari 2019
-                </p>
-                <p class="subtitle-foto">
-                  Satu kantor, satu divisi, dan posisi tempat duduk saling membelakangi.
-                </p>   
-              </div>            
-            </article>
-          </div>
-          <div class="tile is-parent">
-            <article class="tile is-child notification foto3" data-aos="fade-up" data-aos-easing="linear">
-              <div class="content">  
-                <p class="title-foto">
-                  Maret 2019
-                </p>
-                <p class="subtitle-foto">
-                  Cerita cinta dimulai
-                </p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-      <div class="space24px"></div>
-      <div class="tile is-ancestor">
-        <div class="tile is-parent">
-          <article class="tile is-child notification foto6" data-aos="fade-up" data-aos-easing="linear">
-            <div class="content">
-              <p class="title-foto">Juni 2019</p>
-              <p class="subtitle-foto">Pertemuan 2 keluarga</p>
-            </div>
-          </article>
-        </div>
-        <div class="tile is-parent">
-          <article class="tile is-child notification foto4" data-aos="fade-up" data-aos-easing="linear">
-            <div class="content">
-              <p class="title-foto">Desember 2019</p>
-              <p class="subtitle-foto">Lamaran</p>
-            </div>
-          </article>
-        </div>
-        <div class="tile is-parent">              
-          <article class="tile is-child notification foto5" data-aos="fade-up" data-aos-easing="linear">
-            <div class="content">
-              <p class="title-foto">Maret 2020</p>
-              <p class="subtitle-foto">Menikah</p>
-            </div>
-          </article>
-        </div>
-      </div>   
-          <!-- IMAGES -->
-          <div class="space40px"></div>
-            <div data-aos="fade-up" data-aos-easing="linear">
-              <img src="image/divider-leaves.png" class="divider has-vertically-align" alt="~~~">
-            </div> 
-            <div class="space40px"></div>
-            <div class="space40px"></div>
-
-          </div>
-        </div>
-      </section>
-      <!-- End Tentang Sherly dan Daeng -->
+      <!-- End Lugar Content -->
 
       <!-- Begin RSVP Content -->
       <section class="section-dark contact" id="rsvp">
         <div class="container">
-          <div class="columns is-multiline">          
+          <div class="columns is-multiline">
             <div class="column is-12 prolog">
-              <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">Konfirmasi Kehadiran</h1>
+              <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">Confirmación</h1>
             </div>
             <div class="column is-12 prolog has-text-centered" data-aos="fade-up" data-aos-easing="linear">
               <p class="h2 subtitle">
-                Merupakan suatu kehormatan dan kebahagiaan bagi kami
+                Texto
                 <br>
-                apabila Bapak/Ibu/Saudara/Saudari berkenan hadir
-                memberikan doa restu.
+                texto 2
                 <br>
-                <br>
-                Jika bisa hadir kami tunggu konfirmasinya, 
-                <br>
-                Informasi: Di meja penerima tamu akan kami sediakan hand sanitizer dan pemeriksaan suhu tubuh.
-                <br>
-                <br>
-                Jika tidak memungkinkan untuk hadir di pernikahan kami,tidak mengapa,
-                <br> 
-                semoga bisa berjumpa di lain kesempatan
-                <br>
-                <br>
-                Stay safe & jaga kesehatan ya :)
                 </p>
-     
-              <a href="https://api.whatsapp.com/send?phone=628xxxxxxxxxx&text=Halo%20Sherly,%20saya%20akan%20datang%20di%20acara%20pernikahan&source=&data=" class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
-                <i class="fab fa-whatsapp"></i>
-                &nbsp;&nbsp;Kabari Sherly
-              </a>
-              
 
-          
-              <a href="https://api.whatsapp.com/send?phone=628xxxxxxxxxx&text=Halo%20Daeng,%20saya%20akan%20datang%20di%20acara%20pernikahan&source=&data=" class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
+
+
+              <a href="https://google.com" class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
                 <i class="fab fa-whatsapp"></i>
-                &nbsp;&nbsp; Kabari Daeng
+                Confirma tu asistencia
               </a >
               <div class="space40px"></div>
 
               <div class="space40px"></div>
               <div data-aos="fade-up" data-aos-easing="linear">
-                <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
+                <img src="image/naranjo_rama.png" class="divider has-text-centered" alt="~~~">
               </div>
-              <div class="space40px"></div>
-              <p class="h2 subtitle" data-aos="fade-up" data-aos-easing="linear">
-                Kami yang berbahagia,
-                <br>
-                <a class="instagram":" href="https://instagram.com/nengchely" target="_blank" alt="Instagram Sherly">
-                  <i class="fab fa-instagram"></i> @nengchely
-                </a>
-                &nbsp
-                <a class="instagram" href="https://instagram.com/daengdoang" target="_blank" alt="Instagram Daeng">
-                  <i class="fab fa-instagram"></i> @daengdoang
-                </a>
-              </p>
 
             </div>
- 
+
          </div>
         </div>
       </section>
@@ -450,22 +319,13 @@
     <!-- Begin Footer -->
     <div class="footer">
       <div class="container">
-        <a href="https://github.com/daengdoang/daeng-sherly-menikah" class="has-vertically-align">
-          <p class="has-vertically-align">2020 &copy Daeng Muhammad Feisal</p>
-        </a>
-        <a href="https://bulma.io" class="has-vertically-align">
-          <img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma">
-        </a>
-        <a href="https://www.netlify.com">
-          <img src="https://www.netlify.com/img/global/badges/netlify-color-bg.svg" alt="Deploy with Netlify"/>
-        </a>
       </div>
     </div>
     <!-- End Footer -->
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/menikah.js"></script>
+    <script src="js/wedding.js"></script>
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <script>
