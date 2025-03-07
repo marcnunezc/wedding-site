@@ -34,8 +34,8 @@ html {
   --dark-orange: #C17C42;
   --darker-color: #6E8B3D;
   --dark-color: #6E8B3D;
-  --light-color: #A7C17C;
-  --lighter-color: #D4E7B0;
+  --light-color: #FFECC8;
+  --lighter-color: #FFF7D1;
   --background: #fefae0;
   --green-light: #A7C17C; /* Soft olive green */
   --green-medium: #6E8B3D; /* Vibrant leafy green */
@@ -56,29 +56,11 @@ html {
 .warm-cream { color: #E3D7C4; }
 
 
-.first-color {
-	background: ;
-}
-
-.second-color {
-	background:
-}
-
-.third-color {
-	background: #dce775;
-}
-
-.fourth-color {
-	background: #fff59d;
-}#fff59d
-
 .navbar-item {
   line-height: 38px;
   font-weight: 600;
-  text-transform: ;
   letter-spacing: 1px;
   font-size: 1rem;
-  box-shadow:  ;
 }
 
 .navbar-item.is-active{
@@ -101,10 +83,11 @@ html {
 }  */
 
 .hero {
-  background: linear-gradient(#6E8B3D, #f4a261a6),
-              rgba(0, 0, 0, 0.55) url("../image/cantruy2.jpg") no-repeat;
+  /* background: linear-gradient(#dbb538, #556ae0a6), rgba(0, 0, 0, 0.55) url("../image/esvedra1.jpg") no-repeat; */
+  background: linear-gradient(#6E8B3D, #f4a261a6), rgba(0, 0, 0, 0.55) url("../image/esvedra1.jpg") no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: auto;
+  background-position: center;
   color: white;
   box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   font-family: 'Raleway', sans-serif;
@@ -152,7 +135,6 @@ html {
 .hero .hero-foot .hero-foot--wrapper .hero-menu-desktop {
   line-height: 38px;
   font-weight: 600;
-  text-transform: ;
   letter-spacing: 1px;
   font-size: 1rem;
 }
@@ -197,7 +179,10 @@ html {
 
 .main-content .section-dark {
   /* background-color: #F4E2E2; */
-  background-color: var(--lighter-color);
+  background: linear-gradient(hsl(90, 39%, 69%), hsla(27, 87%, 67%, 0.651)),
+  rgba(0, 0, 0, 0.55) url("../image/cantruy2.jpg") no-repeat;
+  background-size: cover;
+  /* background-color: var(--lighter-color); */
   padding: 80px 40px;
 }
 
@@ -388,6 +373,7 @@ vertical-align: middle;
 .fecha {
   font-size: 1.4rem;
   font-family: 'Raleway', sans-serif;
+  color: white
 }
 
 .tanggal-angka {
@@ -400,7 +386,6 @@ vertical-align: middle;
 .tempat {
   font-size: 1.4rem;
   font-family: 'Raleway', sans-serif;
-  font-size: ;
   margin-bottom: 50px;
 }
 
