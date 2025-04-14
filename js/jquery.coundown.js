@@ -13,10 +13,10 @@
 			days: 'Días',
 			hour: 'Hora',
 			hours: 'Horas',
-			minute: 'Minuto',
-			minutes: 'Minutos',
-			second: 'Segundo',
-			seconds: 'Segundos'
+			minute: 'Min.',
+			minutes: 'Mins.',
+			second: 'Seg.',
+			seconds: 'Segs.'
 		}, options);
 
 		// Throw error if date is not set

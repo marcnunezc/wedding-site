@@ -1,18 +1,21 @@
-
 .timeline__container {
-    content: "";
-    display: block;
-    height: 4px;
-    background: #000;
-    width: 40px;
-    margin: 15px auto;
-    opacity: .6
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100vh; /* Full viewport height */
+    position: relative;
 }
-
 .timeline__element {
     position: relative;
     background-color: hsla(0,0%,100%,0);
     transition: background-color 1s
+}
+
+@font-face {
+  font-family: 'Philila';
+  src: url('/fonts/Phillia.ttf') format('truetype'); /* Adjust path as needed */
+  font-weight: normal;
+  font-style: normal;
 }
 
 .timeline__item-published {
@@ -21,40 +24,45 @@
 
 .timeline__item {
     display: flex;
-    justify-content: space-between
-}
-
-.timeline__item-sign {
-    min-width: 65px;
-    width: 65px;
-    max-height: 45px;
-    display: flex;
-    align-items: center;
+    justify-content: center; /* Centers horizontally */
+    /* align-items: center; Centers vertically */
     position: relative;
-    top: 25px
+}
+.timeline__item-event,
+.timeline__item-sign,
+.timeline__item-time{
+    display: flex;
+    justify-content: center; /* Center each section (sign, interval, event) */
+    align-items: center; /* Vertically center within the section */
+    height: 100px;
+    color: var(--dark-o);
 }
 
-.timeline__item-interval {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 11px
+/* Individual widths */
+.timeline__item-sign {
+    width: 100px; /* Width for sign */
+    padding: 10px 0px 0px 0px
 }
 
 .timeline__item-time {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    padding-top: 3px;
-    padding-bottom: 3px
+    width: 160px; /* Width for time */
+    padding: 5px 0px 0px 0px
 }
+
+.timeline__item-event {
+    width: 160px; /* Width for event */
+    padding: 10px 0px 0px 0px
+}
+
 
 .timeline__item-time-line {
     width: 1px;
     border-right: 1px dotted #000;
     min-height: 30px;
     opacity: .4;
-    margin-left: 15px;
-    position: relative
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .timeline__item-time-line:after {
@@ -66,31 +74,31 @@
     background: #eae5ea;
     border-radius: 100%;
     position: absolute;
-    top: 41px;
+    top: 50px;
     left: -4px
 }
 
 .timeline__item-hours {
     display: inline-flex;
     text-align: right;
-    padding: 0 5px 0 0
+    padding: 0 5px 4px 0
+}
+.timeline__item-minutes {
+    display: flex;
+    text-align: left;
+    padding: 0 0 4px 0px
 }
 
 .timeline__item-hours,.timeline__item-minutes {
     font-size: 45px;
     height: 60px;
     font-weight: 200;
-    width: 70px;
+    width: 60px;
     border: 0;
     background: transparent;
     border-bottom: 1px solid #d2d0d1
 }
 
-.timeline__item-minutes {
-    display: flex;
-    text-align: left;
-    padding: 0 0 0 5px
-}
 
 .timeline__item-day-part {
     display: flex;
@@ -100,15 +108,6 @@
     min-width: 50px;
     white-space: nowrap
 }
-
-/* .timeline__item-hours:hover,.timeline__item-minutes:hover {
-    background: hsla(0,0%,100%,.5)
-} */
-
-/* .timeline__item-hours:focus,.timeline__item-minutes:focus {
-    background: hsla(0,0%,100%,.5);
-    border-bottom: 1px solid #8d8074
-} */
 
 .timeline__item-dots {
     font-size: 45px;
@@ -120,12 +119,11 @@
 .timeline__item-duration {
     height: 100%;
     padding-bottom: 10px;
-    padding-left: 15px;
+    padding-left: 10px;
     color: #6b5353;
     font-size: 10px;
-    text-align: left;
     margin-bottom: 10px;
-    width: 120px; /* Adjust to desired width */
+    width: 180px; /* Adjust to desired width */
     display: inline-block;
     text-align: center; /* Ensures text stays centered */
     white-space: nowrap; /* Prevents text from wrapping */
@@ -138,60 +136,24 @@
     text-overflow: ellipsis;
 }
 
-.timeline__item-day-part:hover,.timeline__item-duration span:hover {
-    background-color: hsla(0,0%,100%,.5);
-    cursor: pointer
+
+.timeline__item-sign,
+.timeline__item-icon,
+.timeline__item-icon img,
+.timeline__item-interval,
+.timeline__item-time,
+.timeline__item-hours,
+.timeline__item-dots,
+.timeline__item-minutes,
+.timeline__item-time-line,
+.timeline__item-event,
+.bp3-editable-text,
+.bp3-editable-text-content {
+  color: var(--dark-orange);
+  border-color: var(--dark-orange); /* if you want borders colored too */
+  fill: var(--dark-orange); /* for SVG or icons */
 }
 
-.timeline__item-event {
-    width: 100%;
-    text-align: left;
-    padding: 36px 20px 5px;
-    font-size: 15px
-}
-
-.timeline__item-event .bp3-editable-text {
-    border-bottom: 1px solid #d2d0d1
-}
-
-.timeline__item-event .bp3-editable-text:hover {
-    background: #ffffff80
-}
-
-.timeline__item-settings {
-    position: absolute;
-    top: 0;
-    right: 0;
-    opacity: 0;
-    transform: rotate(90deg);
-    transition: opacity .2s
-}
-
-.timeline__element:hover .timeline__item-settings {
-    opacity: 1
-}
-
-.timeline__item-published .timeline__item-settings {
-    top: 0;
-    right: 0
-}
-
-.timeline__item-published-note {
-    position: absolute;
-    top: 5px;
-    left: 10px;
-    padding: 0;
-    margin: 0
-}
-
-.timeline__item_highlight,.timeline__item_highlight_published {
-    background-color: hsla(0,0%,100%,0);
-    animation-name: timeline__highlight;
-    animation-duration: 4s;
-    animation-iteration-count: 1
-}
-
-.timeline__item_highlight_published {
-    background-color: hsla(0,0%,100%,.5);
-    animation-name: timeline__highlight_published
-}
+.timeline__item-icon img {
+    filter: brightness(0) saturate(100%) invert(40%) sepia(100%) saturate(500%) hue-rotate(5deg);
+  }

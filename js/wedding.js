@@ -33,19 +33,6 @@ $(document).on("click", 'a[href^="#"]', function(event) {
   );
 });
 
-// When the user scrolls down 20px from the top of the document, show the scroll up button
-window.onscroll = function() {
-  scrollFunction();
-};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("toTop").style.display = "block";
-  } else {
-    document.getElementById("toTop").style.display = "none";
-  }
-}
-
 // Preloader
 $(document).ready(function($) {
   $(".preloader-wrapper").fadeOut();
@@ -55,3 +42,19 @@ $(window).load(function() {
   var Body = $("body");
   Body.addClass("preloader-site");
 });
+
+
+// Show the button when scrolling down
+window.onscroll = function () {
+  const btn = document.getElementById("toTop");
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
+};
+
+// Scroll to top function
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}

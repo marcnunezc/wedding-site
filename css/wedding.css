@@ -16,6 +16,7 @@ html {
 }
 
 .header-wrapper {
+  background: var(--light-color);
   padding-bottom: 30px;
 }
 
@@ -34,7 +35,9 @@ html {
   --dark-orange: #C17C42;
   --darker-color: #6E8B3D;
   --dark-color: #6E8B3D;
-  --light-color: #FFECC8;
+  /* --light-color: hsl(39, 100%, 89%); */
+  --light-color: hsl(39, 100%, 95%);
+  /* --light-color: hsl(303, 100%, 92%); */
   --lighter-color: #FFF7D1;
   --background: #fefae0;
   --green-light: #A7C17C; /* Soft olive green */
@@ -42,6 +45,8 @@ html {
   --green-dark: #3D5C2B; /* Deep forest green */
   --light-orange: #E3B27D; /* Warm sandy orange */
   --orange-dark: #C17C42; /* Earthy burnt orange */
+  /* --countdown-color: #7c3f0d; Warm brownish-orange */
+  --countdown-color: #f7caa5; /* Warm brownish-orange */
 }
 .dusty-pink {color: #D8A9A8}
 .dusty-pink-lighter {color: #EDD2D1}
@@ -58,58 +63,88 @@ html {
 
 .navbar-item {
   line-height: 38px;
+  background-color: var(--light-color);
   font-weight: 600;
-  letter-spacing: 1px;
+  letter-spacing: 0px;
   font-size: 1rem;
 }
 
-.navbar-item.is-active{
-  border-bottom: 2px solid #f4a261;
-}
-
-.a.navbar-item{
-  color: var(--dark-color);
-}
-
-/*
- .hero {
-  background-image: url(https://picsum.photos/id/25/1920/1080);
-  background: linear-gradient(rgba(153, 110, 109, 0.65), rgba(153, 110, 109, 0.65)), rgba(0, 0, 0, 0.55) url("https://picsum.photos/id/381/1920/1080") no-repeat;
+.hero {
+  background: linear-gradient(hsla(331, 30%, 74%, 0.9), hsla(27, 77%, 51%, 0.6)), rgba(0, 0, 0, 0.55) url("../image/esvedra_marina_recorte.jpg") no-repeat center top;
   background-attachment: fixed;
   background-size: cover;
-  color: white;
-  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  font-family: 'Raleway', sans-serif;
-}  */
-
-.hero {
-  /* background: linear-gradient(#dbb538, #556ae0a6), rgba(0, 0, 0, 0.55) url("../image/esvedra1.jpg") no-repeat; */
-  background: linear-gradient(#6E8B3D, #f4a261a6), rgba(0, 0, 0, 0.55) url("../image/esvedra1.jpg") no-repeat;
-  background-attachment: fixed;
-  background-size: auto;
   background-position: center;
   color: white;
   box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   font-family: 'Raleway', sans-serif;
 }
 
-
+@font-face {
+  font-family: 'Philila';
+  src: url('/fonts/Phillia.ttf') format('truetype'); /* Adjust path as needed */
+  font-weight: normal;
+  font-style: normal;
+}
 .hero .title {
-  font-family: 'Rouge Script', sans-serif;
-  font-weight: 700;
-  transform: rotate(-2deg);
-  font-size: 5rem;
+  /* font-family: 'Great Script', sans-serif; */
+
+  font-family:'Philila', sans-serif;
+  font-weight: 300;
+  /* transform: rotate(-2deg); */
+  font-size: 3rem;
   padding-bottom: 5px;
-  color: whitesmoke;
+  /* color: black; */
+  color: var(--light-color);
 }
 
 .hero .subtitle {
+  font-family:'Philila', sans-serif;
   padding: 35px;
-  color: whitesmoke;
-  font-size: 1.3rem;
+  /* color: whitesmoke; */
+  /* color: black; */
+  color :#f7caa5;
+  /* color: #7c3f0d; */
+  font-size:1.5rem;
 }
 
-.hero .tempatwaktu {
+
+.hero .countdown-wrapper {
+  padding: 35px;
+  /* color: whitesmoke; */
+  /* color: var(--light-color); */
+  color: var(--countdown-color);
+  /* color: black; */
+  font-size: 1rem;
+  font-family:'Philila', sans-serif;
+}
+
+#countdown span,
+#countdown .days,
+#countdown .hours,
+#countdown .minutes,
+#countdown .seconds {
+  font-family: 'Philila', sans-serif;
+  font-size: 2rem; /* or however big you want the numbers */
+  /* color: var(--light-color); */
+  color: var(--countdown-color);
+  /* color: black; */
+}
+
+.days_text,
+.hours_text,
+.minutes_text,
+.seconds_text {
+  font-size: 1rem;         /* Size of the text */
+  /* text-transform: uppercase; */
+  /* letter-spacing: 1px; */
+  /* margin-top: 0.5rem; */
+  font-family:'Philila', sans-serif;
+  /* color: var(--light-color); */
+  color: var(--countdown-color) !important;
+  /* color: black !important; */
+}
+
+.hero .lugarwaktu {
   padding-top: 35px;
   font-size: 1.3rem;
 
@@ -117,8 +152,14 @@ html {
 
 .hero .hero-foot {
   height: 50px;
-  background: hsl(0, 0%, 100%);
+  background: var(--light-color);
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.082);
+}
+
+.espaciado {
+  display: inline-block;
+  font-size: 1.2rem;         /* Size of the text */
+  margin-top: 2rem; /* or 1rem */
 }
 
 @media (max-width: 599px) {
@@ -135,12 +176,14 @@ html {
 .hero .hero-foot .hero-foot--wrapper .hero-menu-desktop {
   line-height: 38px;
   font-weight: 600;
+  background: var(--light-color);
   letter-spacing: 1px;
   font-size: 1rem;
 }
 
 .hero .hero-foot .hero-foot--wrapper .hero-menu-desktop ul li {
   display: inline-block;
+  background: var(--light-color);
   padding-right: 15px;
   padding-left: 15px;
 }
@@ -174,16 +217,45 @@ html {
 .main-content {
   padding-top: 2rem;
   color: #000;
+  background-color: var(--light-color);
   font-family: 'Raleway', sans-serif;
 }
 
+.google-button {
+  padding-top: 2rem;
+  color: #000;
+  font-family: 'Raleway', sans-serif;
+}
+
+#confirmaAsistenciaButton {
+  scroll-margin-top: 3000px; /* Adjust this value as needed */
+}
 .main-content .section-dark {
   /* background-color: #F4E2E2; */
-  background: linear-gradient(hsl(90, 39%, 69%), hsla(27, 87%, 67%, 0.651)),
-  rgba(0, 0, 0, 0.55) url("../image/cantruy2.jpg") no-repeat;
+  /* background: linear-gradient(hsl(90, 39%, 69%), hsla(27, 87%, 67%, 0.651)), */
+  /* rgba(0, 0, 0, 0.55) url("../image/cantruy2.jpg") no-repeat; */
+  background: linear-gradient(rgba(143, 142, 142, 0.4), rgba(139, 138, 138, 0.6)), url("../image/cantruy2.jpg") no-repeat center center;
   background-size: cover;
+  background-attachment: relative;
   /* background-color: var(--lighter-color); */
-  padding: 80px 40px;
+  padding: 100px 40px;
+}
+
+.main-content .section-nebulosa {
+  /* background-color: #F4E2E2; */
+  /* background: linear-gradient(hsl(90, 39%, 69%), hsla(27, 87%, 67%, 0.651)), */
+  /* rgba(0, 0, 0, 0.55) url("../image/cantruy2.jpg") no-repeat; */
+  /* background: linear-gradient(rgba(143, 142, 142, 0.2), rgba(139, 138, 138, 0.3)), url("../image/milkyway.webp") no-repeat center center; */
+  background: linear-gradient(
+      hsla(27, 77%, 51%, 0.6),      /* warm orange */
+      hsla(331, 30%, 74%, 0.3)     /* soft pinkish tint */
+    ),url("../image/milkyway.webp") no-repeat center center;
+  background-size: cover;
+  background-attachment: relative;
+  /* filter: brightness(1.2); increase brightness */
+  opacity: 0.9;
+  /* background-color: var(--lighter-color); */
+  padding: 100px 40px;
 }
 
 .main-content .section-darker {
@@ -348,42 +420,45 @@ html {
   padding-bottom: 60px;
 }
 
-.nama-lengkap {
-  font-family: 'Rouge Script', sans-serif;
-  color: var(--dark-orange);
-  font-size: 3.5rem;
+.main-content .section-fecha {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.5rem;
   letter-spacing: 0px;
-  padding-bottom: 6px;
-  line-height: 3.7rem;
+  padding-bottom: 60px;
 }
 
-.ampersand {
-font-size: 5rem;
-font-family: 'Rouge Script', sans-serif;
-color: var(--dark-orange);
-line-height: 5rem;
-display: inline-block;
-vertical-align: middle;
+.nama-lengkap {
+  font-family:'Philila', sans-serif;
+  color: var(--light-color);
+  font-size: 3.5rem;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  line-height: 3.7rem;
 }
 
 .bodytext {
   font-size: 18px;
+  /* font-weight: 100; */
 }
 
 .fecha {
   font-size: 1.4rem;
   font-family: 'Raleway', sans-serif;
-  color: white
+  color: var(--light-color);
 }
 
 .tanggal-angka {
   font-size: 5rem;
   font-family: 'Raleway', sans-serif;
   font-weight: 900;
+  color: var(--light-color);
   line-height: 1;
 }
 
-.tempat {
+.lugar {
   font-size: 1.4rem;
   font-family: 'Raleway', sans-serif;
   margin-bottom: 50px;
@@ -401,7 +476,7 @@ vertical-align: middle;
   line-height: 25px;
   text-align: center;
   vertical-align: middle;
-  background: var(--darker-color);
+  background: var(--light-color);
   color: whitesmoke;
 }
 
@@ -440,31 +515,6 @@ vertical-align: middle;
   vertical-align: middle;
 }
 
-#toTop {
-  height: 50px;
-  width: 50px;
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color: #996E6D;
-  color: white;
-  cursor: pointer;
-  border-radius: 50%;
-  font-size: 2rem;
-  box-shadow: 0 5px 20px rgba(14, 25, 80, 0.3);
-}
-
-#toTop a {
-  color: white;
-}
-
-#toTop:hover {
-  background-color: #BC8887;
-}
 
 ::-webkit-scrollbar {
   width: 8px;
@@ -484,7 +534,7 @@ body.preloader-site {
 .preloader-wrapper {
   height: 100%;
   width: 100%;
-  background: var(--dark-color);
+  background: #D8A9A8;
   /* background: #D8A9A8; */
   position: fixed;
   top: 0;
@@ -531,113 +581,79 @@ body.preloader-site {
 
 }
 
+.faq-item {
+  margin-bottom: 15px;
+}
 
-.btn-cta:hover {
-  color:white;
-  background-color: var(--dark-orange);
+.faq-question {
+  background: none;
+  border: none;
   font-size: 1.2rem;
-  border-radius: 10px;
-  border: 2px solid var(--dark-orange);
-  width:  210px;
-  height: 65px;
-  align-items: center;
-  margin: 1rem;
-}
-
-.btn-cta {
-  background-color: var(--dark-orange);
-  width:  210px;
-  height: 65px;
-  color: white;
-  font-size: 1.2rem;
-  border: 2px solid var(--dark-orange);
-  border-radius: 10px;
-  align-items: center;
-  margin: 1rem;
-}
-
-.cashbac-logo-inline {
-  width: 160px;
-  vertical-align: middle;
-}
-
-.button-download {
-  min-width: 200px;
-  height: 55px;
-  align-items: center;
-  margin: 0.1rem;
-
-}
-
-.voucher-code {
-  height: 55px;
-  max-width: 180px;
-  border: 2px solid #26ade4;
-  border-radius: 10px 0 0 10px  ;
-  font-size: 24px;
-  padding: 15px;
-}
-
-.btn-voucher-code {
-  height: 55px;
-  min-width: 100px;
-  border: 2px solid #26ade4;
-  background-color: #26ade4;
-  border-radius: 0 10px 10px 0;
-  font-size: 20px;
-  padding: 0;
-  margin: 0;
-  vertical-align: middle;
-  color: white;
-}
-
-.fa-copy {
-  margin-right: 5px;
-}
-.white
-{color:ghostwhite}
-
-
-.tile {
-  border-radius: 10px;
-}
-
-
-
-
-.title-foto {
-  font-size: 18pt;
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-  text-align: left;
-  color: white;
-}
-
-
-.subtitle-foto {
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-  font-size: 14pt;
   font-weight: 600;
-  margin-top: 15px;
+  color: var(--dark-orange);
   text-align: left;
+  width: 100%;
+  cursor: pointer;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--dark-orange);
+}
+
+.faq-answer {
+  padding: 10px 0 0 20px;
+  display: none;
+  animation: fadeIn 0.3s ease-in-out;
+  color: #000;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.update-banner {
+  background-color: var(--light-color);
+  border-top: 3px solid var(--dark-orange);
+  padding: 30px 20px;
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.update-banner .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.update-banner .update-icon {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--dark-orange);
+  margin-bottom: 10px;
+}
+
+
+#toTop {
+  height: 50px;
+  width: 50px;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: var(--dark-orange);
+  color: white;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 2rem;
+  box-shadow: 0 5px 20px rgba(14, 25, 80, 0.3);
+}
+
+#toTop a {
   color: white;
 }
-/*
-.section-light {
-  background-image: url(../image/naranjo_rama.png);
-  background-position: bottom -0px center;
-  background-repeat: no-repeat;
-  background-size: initial;
-} */
 
-.instagram {
-  color: #996E6D;
-  font-size: 1.25rem;
-  font-weight: 900;
-  margin-top: 0.5rem;
-  display: inline-block;
-  vertical-align: middle;
-  text-align: center;
-  padding: 10px;
+#toTop:hover {
+  background-color: var(--light-color);
 }

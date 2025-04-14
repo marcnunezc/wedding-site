@@ -10,22 +10,18 @@
     <meta property="og:title" content="Boda Can Truy - Lara & Marc - Sábado, 20 de Septiembre de 2025">
     <meta property="og:description" content="Boda Can Truy - Lara & Marc - Sábado, 20 de Septiembre de 2025">
     <meta property="og:locale" content="id_ID" />
-    <meta name="twitter:card" content="summary_large_image">
     <!-- Bulma Version 0.8.x-->
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/bulma-tooltip@0.1.5/dist/bulma-tooltip.min.css" />
     <link rel="stylesheet" type="text/css" href="css/wedding.css" />
     <link rel="stylesheet" type="text/css" href="css/timeline.css" />
     <link rel="stylesheet" type="text/css" href="css/jquery.countdown.css" />
-    <script
-      src="https://kit.fontawesome.com/2828f7885a.js"
-      integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
-      crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Dancing+Script:wght@400..700&family=Elsie:wght@400;900&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="js/jquery.coundown.js"></script>
     <link rel="icon" type="image/png" href="image/orange_icon.png" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23064379-20"></script>
     <!-- Begin Script for Countdown -->
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -41,10 +37,11 @@
   </head>
 
   <body>
+    <button id="toTop" onclick="scrollToTop()">↑</button>
     <!-- Begin Preloader -->
     <div class="preloader-wrapper">
       <div class="preloader">
-        <img src="image/naranjo_rama.png" alt="Flower" />
+        <img src="image/orange_icon.png" alt="Flower" />
       </div>
     </div>
     <!-- End Preloader-->
@@ -66,6 +63,16 @@
           <div id="mobile-nav" class="navbar-menu">
             <div class="navbar-end">
               <div class="navbar-item">
+                <a class="navbar-item" href="#confirmaAsistenciaButton">
+                Formulario
+                </a>
+              </div>
+              <div class="navbar-item">
+                <a class="navbar-item" href="#faq">
+                  Horario
+                </a>
+              </div>
+              <div class="navbar-item">
                 <a class="navbar-item" href="#Fecha">
                   Fecha
                 </a>
@@ -76,8 +83,8 @@
                 </a>
               </div>
               <div class="navbar-item">
-                <a class="navbar-item" href="#rsvp">
-                  Formulario
+                <a class="navbar-item" href="#faq">
+                  F.A.Q.
                 </a>
               </div>
             </div>
@@ -87,20 +94,18 @@
         <!-- Begin Hero Content-->
         <div class="hero-body">
           <div class="container has-text-centered">
-            <h1 class="subtitle">Boda Can Truy</h1>
+            <!-- <h1 class="subtitle">Boda Can Truy</h1> -->
             <h2 class="title">Lara & Marc</h2>
-            <h4 class="subtitle tempatfecha">
+            <h4 class="subtitle lugarfecha">
 
-                Sábado, 20 de Septiembre de 2025
+                20 de Septiembre de 2025
                 </br>
-                Can Truy
-                </br>
-                Ibiza
+                <span class="espaciado"> Can Truy - Ibiza</span>
 
             </h4>
           </div>
           <!-- Start Countdown -->
-          <div>
+          <div class="countdown-wrapper">
             <ul id="countdown" >
               <li><span class="days">00</span><p class="days_text">Días</p></li>
               <li class="separator">:</li>
@@ -142,13 +147,19 @@
                     <a href="#home">Inicio</a>
                   </li>
                   <li>
+                  <a href="#confirmaAsistenciaButton">Formulario</a>
+                  </li>
+                  <li>
+                    <a href="#horario">Horario</a>
+                  </li>
+                  <li>
                     <a href="#Fecha">Fecha</a>
                   </li>
                   <li>
                     <a href="#lugar">Lugar</a>
                   </li>
                   <li>
-                    <a href="#rsvp">Formulario</a>
+                    <a href="#faq">F.A.Q.</a>
                   </li>
                 </ul>
               </div>
@@ -179,28 +190,86 @@
 
         </p>
 
-        <span class="space40px"></span>
-        <span class="space40px"></span>
+      <div class="space40px"></div>
+      <span class="space40px"></span>
+       <!-- Begin Fecha Section -->
+       <section class="section-nebulosa" data-aos="fade-up" id="confirmaAsistenciaButton">
+        <div class="nama-lengkap" data-aos="fade-up" >
+          Lara & Marc
+        </div>
+        <div class="google-button has-text-centered" data-aos="fade-up" >
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfL64BdmIq5yFfwSZOF2bWyyVKtcpQ1DmZjtV8yR8V6pcVzpQ/viewform?usp=header" class="button btn-whatsapp has-text-centered" target="_blank">
+          <i class="fab fa-whatsapp"></i>
+          Confirma tu asistencia
+        </a >
+        </div>
+      </section>
+      <!-- End Fecha Content -->
 
-        <div data-aos="fade-up" data-aos-easing="linear">
-          <div class="nama-lengkap" >
-            Lara & Marc
-          </div>
-        </div>
+
+        <div class="space40px"></div>
         <span class="space40px"></span>
-        <div data-aos="fade-up" data-aos-easing="linear">
-          <img src="image/naranjo_rama.png" class="divider has-text-centered" alt="~~~">
-        </div>
-        <span class="space40px"></span>
+        <script>
+          function addTimelineItem(img_src, hour, minutes, duration, description) {
+              // Create the timeline item container
+              const timelineItem = document.createElement("div");
+              timelineItem.classList.add("timeline__item");
+
+              // Inner HTML structure
+              timelineItem.innerHTML = `
+                  <div class="timeline__item-sign">
+                      <div class="timeline__item-icon">
+                          <img class="text-not-selectable" src="${img_src}" width="45" height="auto">
+                      </div>
+                  </div>
+                  <div class="timeline__item-interval">
+                      <div class="timeline__item-time">
+                          <input class="timeline__item-hours" type="text" maxlength="2" value="${hour}" disabled>
+                          <span class="timeline__item-dots">:</span>
+                          <input class="timeline__item-minutes" type="text" maxlength="2" value="${minutes}" disabled>
+                      </div>
+                  </div>
+                  <div class="timeline__item-time-line"></div>
+                  <div class="timeline__item-event">
+                      <div class="bp3-editable-text bp3-multiline" tabindex="0">
+                          <span class="bp3-editable-text-content">${description}</span>
+                      </div>
+                  </div>
+              `;
+
+              // Append to the timeline container
+              document.querySelector(".timeline-container").appendChild(timelineItem);
+          }
+          </script>
+
+    <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear" id="horario">
+      <h1 class="title has-text-centered section-title">Horario</h1>
+    </div>
+          <div class="timeline-container" data-aos="fade-up" data-aos-easing="linear"></div>
+          <script>
+            addTimelineItem("svg/limo.svg", "16", "00", "30 min", "Llegada");
+            addTimelineItem("svg/ido.svg", "16", "30", "1 h", "Ceremonia");
+            addTimelineItem("svg/coctel.svg", "17", "30", "2 h", "Cóctel");
+            addTimelineItem("svg/dinner.svg", "19", "30", "3 h", "Cena");
+            addTimelineItem("svg/dance.svg", "22", "30", "30 min", "Baile");
+            addTimelineItem("svg/dj.svg", "23", "00", "5 h", "Fiesta");
+            addTimelineItem("svg/firework.svg", "04", "00", "5 min", "Fin");
+        </script>
+
+
+        <!-- <div data-aos="fade-up" data-aos-easing="linear"> -->
+          <!-- <img src="image/naranjo_rama.png" class="divider has-text-centered" alt="~~~"> -->
+        <!-- </div> -->
+        <!-- <span class="space40px"></span> -->
       </section>
       <!-- End regular-section-->
 
       <!-- Begin Fecha Section -->
-      <section class="section-dark" id="Fecha">
-        <div class="container">
+      <section class="section-dark" id="Fecha" data-aos="fade-up">
+        <div class="container" data-aos="fade-up">
 
           <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
-            <h1 class="title has-text-centered section-title">Fecha</h1>
+              <h1 class="title has-text-centered section-fecha">Fecha</h1>
           </div>
 
           <div class="columns is-multiline" data-aos="fade-up" data-aos-easing="linear">
@@ -238,8 +307,8 @@
           </div>
         </div>
         <div class="space40px"></div>
-        <div class="main-content has-text-centered" data-aos="fade-up" data-aos-easing="linear">
-          <a href="https://calendar.google.com/" target="_blank" class="button has-tooltip btn-cta" data-tooltip="Add to Calendar" target="_blank" data-aos="zoom-in">
+        <div class="google-button is-transparent has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+          <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Boda+Lara+%26+Marc+-+Can+Truy&amp;details=&amp;location=Restaurante+Can+Truy%2C+Carretera+San+Juan+cruce+Santa+Eulalia+Km+10.5%2C+07840+Santa+Eul%C3%A0ria+des+Riu%2C+Illes+Balears%2C+Espa%C3%B1a&amp;dates=20250920T160000/20250921T040000&amp;ctz=Europe/Madrid" target="_blank" class="button has-tooltip btn-whatsapp" data-tooltip="Add to Calendar" target="_blank" data-aos="zoom-in">
             <i class="far fa-calendar-plus"></i>
             Google Calendar
           </a>
@@ -252,7 +321,7 @@
         <div class="container">
           <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
             <h1 class="title has-text-centered section-title">Lugar</h1>
-            <p class="tempat is-larger has-text-centered">
+            <p class="lugar is-larger has-text-centered">
               <strong>Can Truy</strong>
               <br>
               Carretera San Juan cruce Santa Eulalia Km 10,5,
@@ -261,57 +330,14 @@
               <br>
             </p>
           </div>
-          <script>
-            function addTimelineItem(img_src, hour, minutes, duration, description) {
-                // Create the timeline item container
-                const timelineItem = document.createElement("div");
-                timelineItem.classList.add("timeline__item");
 
-                // Inner HTML structure
-                timelineItem.innerHTML = `
-                    <div class="timeline__item-sign">
-                        <div class="timeline__item-icon">
-                            <img class="text-not-selectable" src="${img_src}" width="45" height="auto">
-                        </div>
-                    </div>
-                    <div class="timeline__item-interval">
-                        <div class="timeline__item-time">
-                            <input class="timeline__item-hours" type="text" maxlength="2" value="${hour}" readonly>
-                            <span class="timeline__item-dots">:</span>
-                            <input class="timeline__item-minutes" type="text" maxlength="2" value="${minutes}" readonly>
-                        </div>
-                        <div class="timeline__item-duration"><span>Duración: ${duration}</span></div>
-                    </div>
-                    <div class="timeline__item-time-line"></div>
-                    <div class="timeline__item-event">
-                        <div class="bp3-editable-text bp3-multiline" tabindex="0">
-                            <span class="bp3-editable-text-content">${description}</span>
-                        </div>
-                    </div>
-                `;
-
-                // Append to the timeline container
-                document.querySelector(".timeline-container").appendChild(timelineItem);
-            }
-            </script>
-
-            <div class="timeline-container"></div>
-            <script src="wedding.js"></script>
-            <script>
-              addTimelineItem("svg/ido.svg", "16", "30", "1 h", "Ceremonia");
-              addTimelineItem("svg/coctel.svg", "17", "30", "2 h", "Cóctel");
-              addTimelineItem("svg/dinner.svg", "19", "30", "3 h", "Cena");
-              addTimelineItem("svg/dance.svg", "22", "30", "30 min", "Baile");
-              addTimelineItem("svg/dj.svg", "23", "00", "5 h", "Fiesta");
-              addTimelineItem("svg/bus.svg", "04", "00", "5 min", "Fin");
-          </script>
 
           <div class="section-map" data-aos="fade-up" data-aos-easing="linear">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.140249610802!2d1.4861969756130684!3d38.989295371704586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12991548c39ef533%3A0xd2fa4c14fd7ab798!2sRestaurante%20Can%20Truy!5e0!3m2!1ses!2sit!4v1740747800893!5m2!1ses!2sit" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
           </div>
           <div class="space40px"></div>
           <div class="has-text-centered" data-aos="fade-up" data-aos-easing="linear">
-            <a href="https://maps.app.goo.gl/WMmzgkL6gDny4ZmP8" class="button btn-cta" target="_blank" data-aos="zoom-in">
+            <a href="https://maps.app.goo.gl/WMmzgkL6gDny4ZmP8" class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
               <i class="far fa-directions"></i>
               Google Maps
             </a>
@@ -320,55 +346,144 @@
       </section>
       <!-- End Lugar Content -->
 
-      <!-- Begin RSVP Content -->
-      <section class="section-dark contact" id="rsvp">
-        <div class="container">
-          <div class="columns is-multiline">
-            <div class="column is-12 prolog">
-              <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">Confirmación</h1>
+      <!-- Begin FAQ Section -->
+      <section class="section-darker" id="faq">
+        <div class="container is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
+          <h1 class="title has-text-centered section-title">Lo que siempre quisiste preguntar (y no sabías cómo)</h1>
+
+          <div class="faq-item">
+            <button class="faq-question"> ¿Hay código de vestimenta? </button>
+            <div class="faq-answer">
+              ¡No hay dress code! Venid cómod@s, guap@s, elegantes, como os sintáis mejor...<br>
+              Solo una pequeña gran norma:<br>
+              ❌ ¡Nada de blanco!<br>
+              La única persona de blanco ese día tiene nombre, apellidos... y ramo. 😇💐
             </div>
-            <div class="column is-12 prolog has-text-centered" data-aos="fade-up" data-aos-easing="linear">
-              <p class="h2 subtitle">
-                Texto
-                <br>
-                texto 2
-                <br>
-                </p>
+          </div>
 
+          <div class="faq-item">
+            <button class="faq-question"> ¿Puedo venir con acompañante? </button>
+            <div class="faq-answer">
+              ¡Nos encantaría invitar a todo el mundo! Pero esta boda la estamos organizando con mucho cariño… y también con un presupuesto realista 😅💸<br>
+              Esta vez no hay +1, pero hay +1 millón de ganas de compartir este día contigo, ¡habrá risas, brindis y gente genial para compartirlo todo!
+            </div>
+          </div>
 
+          <div class="faq-item">
+            <button class="faq-question"> ¿Puedo venir con niños? </button>
+            <div class="faq-answer">
+              ¡Claro que sí! Si tus peques están incluidos en la invitación, serán más que bienvenidos 🧸 💕<br>
+              Eso sí, nos gustaría que supierais que no habrá animación ni zonas infantiles organizadas. Será una celebración pensada más para mayores, así que si vienen, serán nuestra mejor compañía… ¡pero vuestra responsabilidad! 😄<br>
+              ¡Pero seguro que entre música, bailes y postres, algo encuentran para pasárselo bien! 🍰
+            </div>
+          </div>
 
-              <a href="https://google.com" class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
-                <i class="fab fa-whatsapp"></i>
-                Confirma tu asistencia
-              </a >
-              <div class="space40px"></div>
-
-              <div class="space40px"></div>
-              <div data-aos="fade-up" data-aos-easing="linear">
-                <img src="image/naranjo_rama.png" class="divider has-text-centered" alt="~~~">
+          <div class="faq-item">
+            <button class="faq-question">¿Qué opciones hay de menú?</button>
+            <div class="faq-answer">
+              Puedes elegir entre:
+              <div style="padding-left: 20px; margin-top: 5px; margin-bottom: 10px;">
+                - Menú Adulto 🍽️ <br>
+                - Menú Vegetariano 🥗 <br>
+                - Menú Infantil 🍕
               </div>
-
+              Muy pronto compartiremos los platos de cada menú para que sepáis exactamente qué vais a disfrutar 😋<br>
+              Y no os preocupéis: podréis modificar vuestra elección hasta el 20/08/2025 sin problema.
+              <br><br>
+              Si tenéis alguna alergia o necesidad especial, solo indicadlo en el <a href="#confirmaAsistenciaButton" style="color: #ffae42; text-decoration: underline;">formulario</a>. ¡Queremos que todo esté perfecto para vosotros! 💖
             </div>
+          </div>
 
-         </div>
+          <div class="faq-item">
+            <button class="faq-question"> ¿Puedo pedir una canción? </button>
+            <div class="faq-answer">
+              ¡Claro que sí!<br>
+              Nos encantaría que la banda sonora de la boda tenga un poquito de todos.<br>
+              En el <a href="#confirmaAsistenciaButton" style="color: #ffae42; text-decoration: underline;">formulario</a> podrás decirnos esa canción que no puede faltar en la pista 💃🪩
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question"> ¿Dónde es la boda? ¿Cómo llego? </button>
+            <div class="faq-answer">
+              Toda la info sobre el lugar, direcciones y horarios la encontrarás en la sección
+              <a href="#lugar" style="color: #ffae42; text-decoration: underline;">Lugar</a>.<br>
+              Y si aún así te pierdes… no te preocupes, ¡lo importante es que llegues! 🗺️😉
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question"> ¿Hasta cuándo puedo confirmar asistencia? </button>
+            <div class="faq-answer">
+              Nos vendría fenomenal que pudieras confirmar tu asistencia antes del 20/06/2025, para que podamos organizar todo con tiempo. 😄
+              <br>
+              Cómo aún no hemos podido compartir con vosotros los platos que incluyen los diferentes menús, en cuanto podamos hacerlo, tendrás hasta el 20/08/2025 para cambiar tu elección de menú si lo necesitas.
+              <br>
+              ¡Así que no te preocupes! Tendrás tiempo para decidir una vez tengas toda la información. 🥂💕
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question"> ¿Qué pasa con los regalos? </button>
+            <div class="faq-answer">
+              Vuestra presencia es nuestro regalo más bonito 🥹, pero si queréis hacernos un pequeño mimo, ¡nuestro cerdito virtual también acepta aportaciones! 🐷💖
+              En la invitación tenéis nuestro número de cuenta, por si queréis sumaros a este detalle.
+              <br>
+              ¡Gracias por estar tan cerca de nosotros y compartir este día tan especial! 🎁
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question"> ¿Qué pasa si no puedo venir? </button>
+            <div class="faq-answer">
+              ¡Te echaremos mucho de menos! 😭<br>
+              Solo te pedimos que lo confirmes igualmente para poder organizar todo con cariño 💕
+            </div>
+          </div>
         </div>
       </section>
-      <!-- End RSVP Content -->
+      <!-- End FAQ Section -->
+
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const questions = document.querySelectorAll(".faq-question");
+          questions.forEach((question) => {
+            question.addEventListener("click", () => {
+              const answer = question.nextElementSibling;
+              const isOpen = answer.style.display === "block";
+              answer.style.display = isOpen ? "none" : "block";
+            });
+          });
+        });
+      </script>
+
     </div>
     <!-- End Main Content -->
 
-    <!-- Begin Footer -->
-    <div class="footer">
-      <div class="container">
+    <!-- Begin Update Banner -->
+    <section class="update-banner"  >
+      <div class="container" data-aos="fade-up">
+        <p class="update-icon">🔔 Mantente al tanto de cualquier actualización 🔔</p>
+        <p>
+          Queridos invitad@s, sabéis que los detalles más pequeños hacen que todo sea perfecto, y la organización de la boda es algo en constante cambio.
+          </p>¡Así que estad atent@s!
+        </p>Aquí en nuestra web es donde compartiremos cualquier actualización importante, nuevos servicios o sorpresas que surjan.
+        </p>
+        <p>
+          No olvides visitarnos de vez en cuando para estar al tanto de todas las novedades.<br>
+          <strong>¡Este será el lugar donde encontraréis toda la info más actualizada sobre el evento! 🎉</strong>
+        </p>
       </div>
-    </div>
-    <!-- End Footer -->
+    </section>
+    <!-- End Update Banner -->
 
     <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
     <script src="js/wedding.js"></script>
-    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
       AOS.init({
         easing: "ease-out",
