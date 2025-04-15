@@ -81,7 +81,7 @@ html {
 
 @font-face {
   font-family: 'Philila';
-  src: url('/fonts/Phillia.ttf') format('truetype'); /* Adjust path as needed */
+  src: url('../fonts/Phillia.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
