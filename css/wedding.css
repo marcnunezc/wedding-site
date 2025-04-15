@@ -14,9 +14,7 @@ html {
   width: 100%;
   min-height: 100%;
 }
-@supports (-webkit-touch-callout: inherit) {
-  background-attachment: scroll;
-}
+
 .header-wrapper {
   background: var(--light-color);
   padding-bottom: 30px;
@@ -76,7 +74,7 @@ html {
     hsla(331, 30%, 74%, 0.9),
     hsla(27, 77%, 51%, 0.6)),
     url("../image/esvedra.jpg") no-repeat center center;
-  background-attachment: fixed;
+  background-attachment: relative;
   background-size: cover;
 }
 
