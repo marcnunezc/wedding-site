@@ -144,7 +144,7 @@
 .bp3-editable-text,
 .bp3-editable-text-content {
     color: var(--dark-orange);
-    font-weight: 300;
+    font-weight: 350;
     border-color: var(--dark-orange); /* if you want borders colored too */
     fill: var(--dark-orange); /* for SVG or icons */
 }
