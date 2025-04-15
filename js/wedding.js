@@ -44,16 +44,20 @@ $(window).load(function() {
 });
 
 
-// Show the button when scrolling down
-window.onscroll = function () {
+function checkScrollPosition() {
   const btn = document.getElementById("toTop");
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
     btn.style.display = "block";
   } else {
     btn.style.display = "none";
   }
-};
+}
 
+// Check on scroll
+window.onscroll = checkScrollPosition;
+
+// Check on load
+window.onload = checkScrollPosition;
 // Scroll to top function
 function scrollToTop() {
   window.scrollTo({ top: 0, behavior: 'smooth' });

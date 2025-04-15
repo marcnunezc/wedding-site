@@ -661,7 +661,3 @@ body.preloader-site {
   align-items: center;
   justify-content: center;
 }
-
-#toTop:hover {
-  background-color: var(--light-color);
-}
