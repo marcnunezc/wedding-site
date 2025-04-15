@@ -5,15 +5,6 @@
     height: 100vh; /* Full viewport height */
     position: relative;
 }
-.timeline__element {
-    position: relative;
-    background-color: hsla(0,0%,100%,0);
-    transition: background-color 1s
-}
-
-.timeline__item-published {
-    background-color: hsla(0,0%,100%,.5)
-}
 
 .timeline__item {
     display: flex;
@@ -28,7 +19,6 @@
     justify-content: center; /* Center each section (sign, interval, event) */
     align-items: center; /* Vertically center within the section */
     height: 100px;
-    color: var(--dark-o);
 }
 
 /* Individual widths */
@@ -74,7 +64,6 @@
 .timeline__item-hours {
     display: inline-flex;
     text-align: right;
-    font-weight: ;
     padding: 0 5px 4px 0
 }
 .timeline__item-minutes {

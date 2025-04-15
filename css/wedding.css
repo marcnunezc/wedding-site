@@ -123,7 +123,7 @@ html {
 #countdown .minutes,
 #countdown .seconds {
   font-family: 'Philila', sans-serif;
-  font-size: 2rem; /* or however big you want the numbers */
+  font-size: 1rem; /* or however big you want the numbers */
   /* color: var(--light-color); */
   color: var(--countdown-color);
   /* color: black; */
@@ -133,7 +133,7 @@ html {
 .hours_text,
 .minutes_text,
 .seconds_text {
-  font-size: 1rem;         /* Size of the text */
+  font-size: 10px;         /* Size of the text */
   /* text-transform: uppercase; */
   /* letter-spacing: 1px; */
   /* margin-top: 0.5rem; */
@@ -141,6 +141,32 @@ html {
   /* color: var(--light-color); */
   color: var(--countdown-color) !important;
   /* color: black !important; */
+}
+
+ul#countdown {
+	list-style: none;
+	margin: 30px 0;
+	padding: 0;
+	display: block;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+}
+ul#countdown li {
+	display: inline-block;
+}
+ul#countdown li span {
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 30px;
+}
+ul#countdown li.separator {
+	font-size: 20px;
+	line-height: 25px;
+	vertical-align: top;
+}
+ul#countdown li p {
+	color: #fff;
+	font-size: 12px;
 }
 
 .hero .lugarwaktu {
