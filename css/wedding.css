@@ -70,7 +70,7 @@ html {
 }
 
 .hero {
-  background: linear-gradient(hsla(331, 30%, 74%, 0.9), hsla(27, 77%, 51%, 0.6)), rgba(0, 0, 0, 0.55) url("../image/esvedra_marina_recorte.jpg") no-repeat center top;
+  background: linear-gradient(hsla(331, 30%, 74%, 0.9), hsla(27, 77%, 51%, 0.6)), rgba(0, 0, 0, 0.55) url("../image/esvedra.jpg") no-repeat center top;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;

@@ -11,13 +11,6 @@
     transition: background-color 1s
 }
 
-@font-face {
-  font-family: 'Philila';
-  src: url('/fonts/Phillia.ttf') format('truetype'); /* Adjust path as needed */
-  font-weight: normal;
-  font-style: normal;
-}
-
 .timeline__item-published {
     background-color: hsla(0,0%,100%,.5)
 }
