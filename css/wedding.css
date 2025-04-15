@@ -430,13 +430,13 @@ html {
   padding-bottom: 60px;
 }
 
-.nama-lengkap {
+.nombre-asistencia {
   font-family:'Philila', sans-serif;
   color: var(--light-color);
   font-size: 3.5rem;
   padding-top: 50px;
   padding-bottom: 10px;
-  line-height: 3.7rem;
+  margin: 1px
 }
 
 .bodytext {
@@ -561,7 +561,6 @@ body.preloader-site {
   width:  210px;
   height: 65px;
   align-items: center;
-  margin: 1rem;
 }
 
 
@@ -577,8 +576,6 @@ body.preloader-site {
   border-top: 1px solid var(--dark-orange);
   border-bottom: 1px solid var(--dark-orange);
   align-items: center;
-  margin: 1rem;
-
 }
 
 .faq-item {
@@ -647,7 +644,7 @@ body.preloader-site {
   cursor: pointer;
   border-radius: 50%;
   font-size: 2rem;
-  box-shadow: 0 5px 20px rgba(14, 25, 80, 0.3);
+  box-shadow: 0 0px 0px rgba(14, 25, 80, 0.3);
 }
 
 #toTop a {
