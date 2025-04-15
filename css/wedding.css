@@ -74,7 +74,8 @@ html {
     hsla(331, 30%, 74%, 0.9),
     hsla(27, 77%, 51%, 0.6)),
     url("../image/esvedra_marina_recorte.jpg") no-repeat center center;
-  background-attachment: relative;
+  background-attachment: fixed;
+  z-index: -10;
   background-size: cover;
 }
 
@@ -626,7 +627,6 @@ body.preloader-site {
   color: var(--dark-orange);
   margin-bottom: 10px;
 }
-
 
 #toTop {
   height: 50px;
