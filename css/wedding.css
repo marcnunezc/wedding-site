@@ -653,10 +653,9 @@ body.preloader-site {
   margin-bottom: 10px;
 }
 
-#toTop {
+#menuToggle {
   height: 50px;
   width: 50px;
-  display: none;
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -664,26 +663,47 @@ body.preloader-site {
   border: none;
   outline: none;
   background-color: var(--dark-orange);
-  color: white;
   cursor: pointer;
   border-radius: 50%;
-  font-size: 2rem;
   box-shadow: 0 4px 8px rgba(14, 25, 80, 0.3);
-
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0;
-  line-height: 1;
 }
 
-#toTop a {
-  color: white;
+#menuToggle img {
+  height: 60%;
+  width: 60%;
+  object-fit: contain;
+  background-color: transparent;
+}
+
+#menuToggle {
+  background-color: #fdc394; /* e.g., #FF8800 or rgba(255, 136, 0, 0.9) */
+}
+
+#floatingMenu {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  padding: 10px;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 98;
+}
+
+#floatingMenu a {
+  color: var(--dark-orange);
   text-decoration: none;
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+#floatingMenu a:hover {
+  color: var(--orange);
 }

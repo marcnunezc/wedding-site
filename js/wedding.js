@@ -45,9 +45,9 @@ $(window).load(function() {
 
 
 function checkScrollPosition() {
-  const btn = document.getElementById("toTop");
+  const btn = document.getElementById("menuToggle");
   if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-    btn.style.display = "block";
+    btn.style.display = "flex";
   } else {
     btn.style.display = "none";
   }
@@ -58,7 +58,17 @@ window.onscroll = checkScrollPosition;
 
 // Check on load
 window.onload = checkScrollPosition;
-// Scroll to top function
-function scrollToTop() {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-}
+
+const toggleBtn = document.getElementById("menuToggle");
+const menu = document.getElementById("floatingMenu");
+
+toggleBtn.addEventListener("click", () => {
+  menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+});
+
+// Hide the menu when a link is clicked
+document.querySelectorAll("#floatingMenu a").forEach(link => {
+  link.addEventListener("click", () => {
+    menu.style.display = "none";
+  });
+});
